@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 function Herosection() {
   return (
+    <div className='grid grid-cols-2'>
     <div className='grid grid-cols-2 lg:grid-col-7 mt-8 '>
         <div className='bg-white'>
         <h1 className="text-black mb 4 text-4xl lg:text-6xl font-extrabold">Hello, I'm Shahroze</h1>
@@ -18,6 +19,10 @@ function Herosection() {
            />
            </div>
         </div>
+    </div>
+    <div>
+      <h1>hello</h1>
+    </div>
     </div>
   )
 }
