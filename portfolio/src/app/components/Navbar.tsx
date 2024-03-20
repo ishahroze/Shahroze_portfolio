@@ -8,24 +8,20 @@ import { XCircle } from 'lucide-react';
 import { Instagram } from 'lucide-react';
 import { Linkedin } from 'lucide-react';
 import { Facebook } from 'lucide-react';
+import Work from './Work';
 function Navbar() {
     const [nav,setnav]=useState(false);
     const handleclick=()=> setnav(!nav);
   return (
     <div className='fixed w-full flex h-12 justify-between  items-center px 4 bg-slate-900'>
-        <div className='pt-2'>
-        <Image
-        src={"/logo.png"}
-        alt='logo'
-        width={50}
-        height={50}
-        />
+        <div className='TEXT text-yellow-600 text-3xl font-bold pl-3 '>
+       <h1>Shahroze Ali</h1>
         </div>
         <div>
             <ul className='hidden md:flex lg:flex text-white'>
             <li className='pl-4'>Home</li>
             <li className='pl-4'>Skills</li>
-            <li className='pl-4'>About</li>
+            <li className='pl-4'><a href="/Work">About</a></li>
             <li className='pl-4'>Work</li>
             <li className='pl-4'>Contact</li></ul>
         </div>

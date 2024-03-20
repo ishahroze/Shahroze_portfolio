@@ -3,11 +3,13 @@ import React from 'react'
 function About() {
   return (
     <div className='w-full h-screen   bg-slate-800 text-white'>
+        
 <div className='flex flex-col  w-full h-full justify-center items-center  '>
-<div className='max-w-[1000px] w-full px-4 grid grid-cols-2 gap-28'>
-    <div>
-        <p className='text-4xl font-bold inline border-b-4 border-pink-600'>About </p>
+<div  className='flex justify-center'>
+        <p className='text-4xl font-bold inline border-b-4 border-pink-600 mb-6'>About </p>
     </div>
+<div className='max-w-[1000px] w-full px-4 grid grid-cols-2 gap-28'>
+   
     <div>
 <p className='text-white'></p>
     </div>

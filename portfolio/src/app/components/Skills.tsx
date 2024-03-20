@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 function Skills() {
   return (
-    <div className='w-full h-full   bg-slate-800 text-white'>
+    <div className='w-full h-full   bg-slate-800 text-white '>
 <div  className='flex flex-col  w-full h-full justify-center items-center  '>
       <div>
         <p className='text-4xl font-bold inline border-b-4 border-pink-600'>Skills </p>

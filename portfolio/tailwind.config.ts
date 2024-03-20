@@ -16,7 +16,9 @@ const config = {
       screens: {
         "2xl": "1400px",
       },
+      
     },
+    
     extend: {
       colors: {
         border: "hsl(var(--border))",
@@ -74,7 +76,9 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  
+
+  plugins: [require("daisyui")],
 } satisfies Config
 
 export default config
