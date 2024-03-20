@@ -1,5 +1,5 @@
 import React from 'react'
-
+import form from './form'
 const Contact = () => {
   return (
     <div  className='w-full bg-slate-800 min-h-screen '>
@@ -10,6 +10,7 @@ const Contact = () => {
           </p>
         </div>
       </div>
+      <form/>
     </div>
   )
 }
