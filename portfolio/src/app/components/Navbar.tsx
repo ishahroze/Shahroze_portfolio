@@ -13,7 +13,7 @@ function Navbar() {
     const [nav,setnav]=useState(false);
     const handleclick=()=> setnav(!nav);
   return (
-    <div className='fixed w-full flex h-12 justify-between  items-center px 4 bg-slate-900'>
+    <div className=' w-full flex h-12 justify-between  items-center px 4 bg-slate-900'>
         <div className='TEXT text-yellow-600 text-3xl font-bold pl-3 '>
        <h1>Shahroze Ali</h1>
         </div>
