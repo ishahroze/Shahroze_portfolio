@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import Herosection from "./components/Herosection";
 import Navbar from "./components/Navbar";
@@ -6,9 +7,11 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
 import Contact from "./components/Contact";
+import { motion, useScroll } from "framer-motion"
 export default function Home() {
+  const { scrollYProgress } = useScroll();
   return (
-   <div className=" min-h-screen  bg-black">
+   <motion.div className=" min-h-screen  bg-black" >
     
 <Navbar/>
 <Homes/>
@@ -16,6 +19,6 @@ export default function Home() {
 <Skills/>
 <Work/>
 <Contact/>
-   </div>
+   </motion.div>
   );
 }

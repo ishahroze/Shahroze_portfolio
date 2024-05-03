@@ -23,7 +23,7 @@ function Homes() {
     justify-items-center pt-8 sm:order-1 order-1 sm:mr-48'>
  <div className="avatar">
   <div className=" rounded-full mt-12 ring ring-primary ring-offset-base-100  ring-offset-2">
-    <img src="/portfolio11.png" className='' />
+  <img src="/portfolio11.png" className='' />
   </div>
 </div>
     </div>

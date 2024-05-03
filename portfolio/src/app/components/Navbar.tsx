@@ -3,13 +3,17 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Menu } from 'lucide-react';
+import Skills from './Skills';
 import { useState } from 'react';
 import { XCircle } from 'lucide-react';
 import { Instagram } from 'lucide-react';
 import { Linkedin } from 'lucide-react';
 import { Facebook } from 'lucide-react';
 import Work from './Work';
+
 function Navbar() {
+
+    
     const [nav,setnav]=useState(false);
     const handleclick=()=> setnav(!nav);
   return (
@@ -19,14 +23,26 @@ function Navbar() {
         </div>
         <div>
             <ul className='hidden md:flex lg:flex text-white'>
-            <li className='pl-4'>Home</li>
+            <li className='pl-4'>
+              {/* <Link 
+      activeClass="active" 
+      to="/Skills"
+      spy={true} 
+      smooth={true} 
+      offset={50} 
+      duration={500} 
+      onSetActive={handleSetActive}
+    >
+      Test 1
+    </Link> */}
+    </li>
             <li className='pl-4'>Skills</li>
             <li className='pl-4'><a href="/Work">About</a></li>
             <li className='pl-4'>Work</li>
             <li className='pl-4'>Contact</li></ul>
         </div>
         <div onClick={handleclick} className='md:hidden z-10'>
-            {!nav? <Menu /> :<XCircle /> }
+            {!nav? <Menu className='text-white'/> :<XCircle /> }
         </div>
         <div>
             <ul className={!nav
